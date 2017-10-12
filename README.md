@@ -41,27 +41,16 @@ where
 Configuration part of the sketch
 
 | Parameter  | Description |
-
 |---|---|
-
 | ID | Device ID. It's used in the MQTT Topic to distinguish other similar sensors in your MQTT Broker. You can change it. Use either numbers or chars. Don't use space or special characters, default is ESP8266 ChipID |
-
 | WIFI_SSID  | WiFi network name |
-
 | WIFI_PASSWORD   | WiFi network password |
-
 | MQTT_HOST  | MQTT Broker IP or host name |
-
 | MQTT_PORT  | MQTT Port, default 1883 |
-
 | MQTT_USER  | MQTT User name, leave blank if there is no user authentication in your MQTT broker |
-
 | MQTT_PASSWORD  | MQTT User name, leave blank if there is no user authentication in your MQTT broker |
-
 | MQTT_TOPIC  | MQTT Topic used by switch. Default: /sonoff/switch/ |
-
 | TEMP_INTERVAL  | How often Sonoff should get temperature value from the sensor, default: 600sec. (10min) |
-
 | TEMP_CORRECTION   | Temperature will be corrected by the value set in this parameter, default 0 |
 
 **Installation**
@@ -78,10 +67,3 @@ Following libraries are required: **Credits to their authors**
 
 
 More info at my [blog](http://smart-house.adrian.czabanowski.com/sonoff-mqtt-ds18b20-oprogramowanie/) (in Polish only)
-
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
