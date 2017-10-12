@@ -21,15 +21,25 @@
 | Topic  | Inbound / Outbound | Message | Description |
 |---|---|---|---|---| 
 | /sonoff/switch/*ID*/cmd | Inbound | turnON | Sets relay to ON  | 
+
 | /sonoff/switch/*ID*/cmd | Inbound | turnOFF | Sets relay to OFF | 
+
 | /sonoff/switch/*ID*/cmd | Inbound | reportStatus | Requests state of a relay. Sonoff repays with /sonoff/switch/*ID*/state topic | 
+
 | /sonoff/switch/*ID*/cmd | Inbound | reset |  Resets switch | 
+
 | /sonoff/switch/*ID*/cmd | Inbound | tempInterval:N |  Sets how often Sonoff should read value of DS18B20 sensor. N - number of seconds. Example: tempInterval:60 - means read sesonr value every 1 minute. Default: 10min  | 
+
 | /sonoff/switch/*ID*/cmd | Inbound | tempCorrection:N |  Sets a value of temperature correction. Example tempCorrection:-1.2 - means correct returned temperature by -1.2. Default: 0 | 
+
 | /sonoff/switch/*ID*/state | Outbound | ON | Sonoff  publishes this if relay is set to ON by MQTT or manually by pressing Sonoff button |
+
 | /sonoff/switch/*ID*/state | Outbound | OFF | Sonoff  publishes this if relay is set to OFF by MQTT or manually by pressing Sonoff button |
+
 | /sonoff/switch/*ID*/get | Outbound | defaultState | Sonoff switch sends this message to the broker while booting in order to get default values of the relay, temp.correction and interval of sensor read. If it's not implemented in the MQTT broker then default values are set | 
+
 | /sonoff/switch/*ID*/temperature | Outbound | Number | Sonoff switch sends temperature from DS18B20 sensor if it was changed between subsequent measures | 
+
 
 
 where 
