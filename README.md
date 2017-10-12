@@ -20,7 +20,7 @@
 
 | Topic  | Inbound / Outbound | Message | Description |
 
-|---|---|---|---|---| 
+|---|---|---|---| 
 
 | /sonoff/switch/*ID*/cmd | Inbound | turnON | Sets relay to ON  | 
 
