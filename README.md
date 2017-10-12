@@ -89,3 +89,10 @@ Following libraries are required: **Credits to their authors**
 
 
 More info at my [blog](http://smart-house.adrian.czabanowski.com/sonoff-mqtt-ds18b20-oprogramowanie/) (in Polish only)
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
